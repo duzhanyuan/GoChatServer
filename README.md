@@ -42,6 +42,7 @@ username/chatroom.
 
 HEADER:
 
+```
 +-------+---------------------+
 | byte  |                     |
 +-------+---------------------+
@@ -51,6 +52,7 @@ HEADER:
 +-------+---------------------+
 | 11-20 |    chatroom         |
 +-------+---------------------+
+```
 
 Here, we can see that the username can be at most 9 bytes long, and the
 chatroom name can be at most 10 bytes long. When the client constructs
@@ -74,6 +76,7 @@ not implemented yet
 
 MSGRECV 0x04 -- sent by server
 
+```
 +-------+---------------------+
 | byte  |                     |
 +-------+---------------------+
@@ -81,9 +84,11 @@ MSGRECV 0x04 -- sent by server
 +-------+---------------------+
 | 22-?  |    message          |
 +-------+---------------------+
+```
 
 MSGSEND 0x05 -- sent by client
 
+```
 +-------+---------------------+
 | byte  |                     |
 +-------+---------------------+
@@ -91,6 +96,7 @@ MSGSEND 0x05 -- sent by client
 +-------+---------------------+
 | 22-?  |    message          |
 +-------+---------------------+
+```
 
 DEREG 0x06 -- sent by client
 
